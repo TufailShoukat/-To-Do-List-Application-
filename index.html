@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List Application</h1>
+        
+        <div class="task-input">
+            <label for="task-name">Task Name:</label>
+            <input type="text" id="task-name">
+            
+            <label for="due-date">Due Date:</label>
+            <input type="date" id="due-date">
+            
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="Homework">Homework</option>
+                <option value="Exams">Exams</option>
+                <option value="Projects">Projects</option>
+                <option value="Extracurricular Activities">Extracurricular Activities</option>
+                <option value="Personal">Personal</option>
+            </select>
+            
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <div class="filter">
+            <label for="filter-category">Filter by Category:</label>
+            <select id="filter-category" onchange="filterTasks()">
+                <option value="All">All</option>
+                <option value="Homework">Homework</option>
+                <option value="Exams">Exams</option>
+                <option value="Projects">Projects</option>
+                <option value="Extracurricular Activities">Extracurricular Activities</option>
+                <option value="Personal">Personal</option>
+            </select>
+        </div>
+
+        <ul id="task-list"></ul>
+        <div class="footer-div">
+            <footer class="footer-text">Created By:(Tufail Shoukat)</footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
